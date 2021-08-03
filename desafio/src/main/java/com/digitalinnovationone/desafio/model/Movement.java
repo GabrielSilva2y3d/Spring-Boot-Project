@@ -7,11 +7,13 @@ import java.time.LocalDateTime;
 import javax.persistence.Embeddable;
 import javax.persistence.EmbeddedId;
 
-import lombok.*;
+import javax.persistence.Entity;
 
+import lombok.*;
 
 @Data
 @Builder
+@Entity
 public class Movement {
     
     @Embeddable

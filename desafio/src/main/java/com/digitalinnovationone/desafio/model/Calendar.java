@@ -7,6 +7,7 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Data
 @Builder
@@ -16,6 +17,7 @@ public class Calendar {
     private Long id;
     private String descricao;
     private LocalDateTime specialDate;
+    @ManyToOne
     private TypeDate typeDate;
     
 }

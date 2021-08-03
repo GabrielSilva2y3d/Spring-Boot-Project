@@ -30,7 +30,6 @@ public class Movement {
     private LocalDateTime dateEntry;
     private LocalDateTime dateDeparture;
     private BigDecimal period;
-    private Occurrence occurrence;
-    private Calendar calendar;
+    
 
 }

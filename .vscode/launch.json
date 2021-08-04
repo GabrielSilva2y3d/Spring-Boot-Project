@@ -2,11 +2,28 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SwaggerConfig",
+            "request": "launch",
+            "mainClass": "com.digitalinnovationone.desafio.SwaggerConfig",
+            "projectName": "desafio"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-DesafioApplication<desafio>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "mainClass": "com.digitalinnovationone.desafio.DesafioApplication",
+            "projectName": "desafio",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SwaggerConfig<desafio>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.digitalinnovationone.desafio.swagger.SwaggerConfig",
             "projectName": "desafio",
             "args": ""
         }

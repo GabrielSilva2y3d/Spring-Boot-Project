@@ -37,9 +37,9 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
   @Override
   protected void addResourceHandlers(ResourceHandlerRegistry registry) {
     registry.addResourceHandler("swagger-ui.html")
-        .addResourceLocations("classpath:C:/Users/WIN10/Documents/Repositorios/Repository/Spring-Boot-Project/desafio/src/main/java/com/digitalinnovationone/desafio/");
+        .addResourceLocations("classpath:/META-INF/resources/");
 
-    registry.addResourceHandler("/swagger/**")
-        .addResourceLocations("classpath:C:/Users/WIN10/Documents/Repositorios/Repository/Spring-Boot-Project/desafio/src/main/java/com/digitalinnovationone/desafio/swagger/");
+    registry.addResourceHandler("/webjars/**")
+        .addResourceLocations("classpath:/META-INF/resources/webjars/");
   }
 }

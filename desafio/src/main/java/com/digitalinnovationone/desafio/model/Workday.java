@@ -12,6 +12,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.envers.Audited;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -19,6 +21,7 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
+@Audited
 public class Workday {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

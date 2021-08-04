@@ -1,3 +1,4 @@
+package com.digitalinnovationone.desafio.swagger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -36,9 +37,9 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
   @Override
   protected void addResourceHandlers(ResourceHandlerRegistry registry) {
     registry.addResourceHandler("swagger-ui.html")
-        .addResourceLocations("classpath:/META-INF/resources/");
+        .addResourceLocations("classpath:C:/Users/WIN10/Documents/Repositorios/Repository/Spring-Boot-Project/desafio/src/main/java/com/digitalinnovationone/desafio/");
 
-    registry.addResourceHandler("/webjars/**")
-        .addResourceLocations("classpath:/META-INF/resources/webjars/");
+    registry.addResourceHandler("/swagger/**")
+        .addResourceLocations("classpath:C:/Users/WIN10/Documents/Repositorios/Repository/Spring-Boot-Project/desafio/src/main/java/com/digitalinnovationone/desafio/swagger/");
   }
 }

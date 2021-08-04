@@ -31,7 +31,7 @@ public class WorkdayService {
         return workdayRepository.findById(idWorkday);
     }
 
-    public Workday udate(Workday workday){
+    public Workday update(Workday workday){
         return workdayRepository.save(workday);
     }
 
